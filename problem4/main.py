@@ -1,6 +1,6 @@
-def palindrome(input_string):
-    return 'error response'
-
+def palindrome(word):
+    word = ''.join(e for e in word if e.isalnum())
+    return word.lower() == word.lower()[::-1]
 
 if __name__ == '__main__':
     print(palindrome("civic")) # True
